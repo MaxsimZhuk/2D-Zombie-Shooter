@@ -5,6 +5,7 @@ using UnityEngine;
 public class Zombie : MonoBehaviour
 {
     private GameObject Player;
+
     enum Direction
     {
         Run,
@@ -110,6 +111,11 @@ public class Zombie : MonoBehaviour
             Destroy(Body);
             Destroy(leg);
         }
+    }
+    public void KickOff()
+    {
+        transform.position = transform.position + Vector3.right*3;
+
     }
 
     void AmHere(GameObject P)

@@ -16,5 +16,11 @@ public class ZombieBody : MonoBehaviour {
     public void HitForMe()
     {
         MyZombie.BroadcastMessage("HealthDamage", 3);
+
+    }
+    public void KickOffForMe()
+    {
+        MyZombie.BroadcastMessage("KickOff");
+
     }
 }

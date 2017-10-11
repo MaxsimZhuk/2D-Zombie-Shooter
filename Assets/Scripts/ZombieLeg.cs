@@ -17,4 +17,9 @@ public class ZombieLeg : MonoBehaviour {
     {
         MyZombie.BroadcastMessage("HealthDamage", 2);
     }
+    public void KickOffForMe()
+    {
+        MyZombie.BroadcastMessage("KickOff");
+
+    }
 }

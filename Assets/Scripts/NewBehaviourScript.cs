@@ -18,4 +18,9 @@ public class NewBehaviourScript : MonoBehaviour
     {
         MyZombie.BroadcastMessage("HealthDamage", 6);
     }
+    public void KickOffForMe()
+    {
+        MyZombie.BroadcastMessage("KickOff");
+
+    }
 }
